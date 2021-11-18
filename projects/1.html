@@ -49,7 +49,7 @@
                         <div class="card-image-gradient"> 
                             <img src="/images/assembly.jpg">
                         </div>
-                        <span class="card-title"><h1>Opening Ceremony</h1></span>
+                        <span class="card-title"><h1>Flappy Golf</h1></span>
                       <!-- USER ONLY - Initialize page with appropriate state of button -->
                       <a onclick='toggleInterest(this, "{{ event_id }}")' class="btn-floating btn-large halfway-fab waves-effect waves-light scale-transition scale-in blue"><i class="material-icons">star_border</i></a>
                       <!-- <a onclick='toggleInterest(this, "{{ event_id }}"))'class="btn-floating btn-large halfway-fab waves-effect waves-light scale-transition scale-in yellow"><iclass="material-icons">star</i></a> -->
@@ -60,38 +60,38 @@
                         <table class="centered responsive-table">
                             <thead>
                                 <tr>
-                                <th>Location </th>
-                                <th>Date / Time </th>
-                                <th>Duration</th>
-                                <th>Type </th>
-                                <th>Interest </th>
+                                <th>Project </th>
+                                <th>Date Proposed</th>
+                                <th>Tech Stack</th>
+                                <th>Type</th>
+                                <th>Owner</th>
                                 <!-- ADMIN ONLY BUTTONS -->
-                                <th>Admin Op</th>
                                 
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
 
-                                <td>Auditorium </td>
-                                <td>May 2 (Sat) 08:30 AM</td>
-                                <td>45m</td>
-                                <td>Main</td>
-                                <td>10<i class=material-icons>people</i></td>
+                                <td>Flappy Golf</td>
+                                <td>November 18 (Thursday) 08:30 AM</td>
+                                <td>React Native, Firebaes, Google Auth</td>
+                                <td>Mobile Application</td>
+                                <td>Jimmy Reece</td>
+                                
                                 <!-- ADMIN ONLY BUTTONS -->
 
                                 <td nowrap>
                                   
                                     <!-- Alternatively to going to a new page, trigger a modal ??-->
-                                    <a class="btn-floating waves-effect waves-light green lighten-1" href="/eventform.html"><i class="material-icons">edit</i></a>
-                                    <a class="btn-floating waves-effect waves-light red" onclick='confirmDelete("Opening Ceremony","{{ event_id}}", "/events.html")'><i class="material-icons">delete</i></a>
+                                    <a class="btn-floating waves-effect waves-light green lighten-1" href="/projectform.html"><i class="material-icons">edit</i></a>
+                                    <a class="btn-floating waves-effect waves-light red" onclick='confirmDelete("Flappy Golf","{{ project_id }}", "/projects.html")'><i class="material-icons">delete</i></a>
         
                                 </td>
 
                             </tbody>
+                            <p style="margin: 20px;">Flappy Golf is a modern adaptation to the game Flappy Bird, but instead of a golf ball it is a bird that is controlled
+                            in the air through the use of a space bar.</p>
                         </table>
-                        <div class="container event-description">The opening ceremony will be rad! Don't miss it. Or you're technically late.</div>
-                        
                         
                         <!-- TODO: Add a scrollable table (or series of cards??) listing the attendees who are interested -->
                         <!-- https://vembarrajan.medium.com/html-css-tricks-scroll-able-table-body-tbody-d23182ae0fbc -->
@@ -134,7 +134,7 @@
         </div>
       </footer>
 
-    <script src="/js/event_utils.js"></script>
+    <script src="/js/project_utils.js"></script>
 
 
     <!-- Compiled and minified JavaScript -->
